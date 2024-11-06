@@ -1,0 +1,32 @@
+
+# # Exercicio 01
+
+# class Pessoa ():
+#     def __init__(self,nome):
+#         self.__nome = nome
+#     def get_nome (self):
+#         return self.__nome
+
+# # Exercício 02
+#     def set_nome(self, nome):
+#         if isinstance (nome , str) and len (nome) > 0:
+#             self.__nome = nome
+#         else: 
+#             print("não tem nome aqui não")
+
+#Exercicio 03 
+
+# class Carro():
+#     def __init__(self, modelo):
+#         self.__modelo = modelo
+#     def get_modelo (self):
+#         return self.__modelo
+#     def set_modelo(self, modelo):
+#         if isinstance(modelo, str) and len (modelo) >0:
+#             self.__modelo=modelo
+#         else:
+#             print("modelo invalido")
+# carro1 = Carro ('fusca')
+# print(carro1.get_modelo())
+# (carro1.set_modelo('kombi'))
+# print(carro1.get_modelo())
