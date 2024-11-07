@@ -1,0 +1,22 @@
+
+#Criar classe casa com atributos endereco e valor
+
+class Casa ():
+    def __init__ (self, endereco, valor):
+        self.__endereco = endereco
+        self.__valor = valor
+
+    def get_endereco(self):
+        return self.__endereco
+    
+    def set_endereco(self, endereco):
+        self.__endereco = endereco
+
+    def get_valor (self):
+        return self.__valor
+    
+    def set_valor(self, valor):
+        self.__valor = valor
+
+endereco1 = Casa("rua andorinha", 30000)
+print(endereco1.get_endereco(), endereco1.get_valor())
