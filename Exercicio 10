@@ -1,0 +1,15 @@
+#Criar classe celular com atributos marca
+
+class Celular():
+    def __init__(self,marca):
+        self.__marca = marca
+
+    def get_marca (self):
+        return self.__marca
+    def set_marca(self, marca):
+        self.__marca = marca
+
+
+celular1 = Celular("Motorola")
+celular1.set_marca("samsung")
+print(celular1.get_marca())
