@@ -1,0 +1,35 @@
+#Exercicio 04
+class ContaBancaria:
+    def __init__(self, saldo_inicial=0):
+        self._saldo = saldo_inicial  
+
+    def depositar(self, valor):
+        if valor > 0:
+            self._saldo += valor
+            print(f"{valor} depositado.")
+        else:
+            print("nao eh possivel realizar o deposito.")
+
+    def sacar(self, valor):
+        if valor > self._saldo:
+            print("nao tem esse dinheiro.")
+        elif valor > 0:
+            self._saldo -= valor
+            print(f"saque de {valor} realizado .")
+        else:
+            print("nao tem como sacar.")
+
+    def mostrar_saldo(self):
+        return f"Saldo atual: R${self._saldo}"
+
+
+#valor inicial da conta
+conta = ContaBancaria(5)
+#valor depositado
+conta.depositar(15)
+print(conta.mostrar_saldo())
+#Valor para saque
+conta.sacar(5)
+print(conta.mostrar_saldo())
+#saque da valor
+conta.sacar(100) 
