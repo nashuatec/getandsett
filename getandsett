@@ -123,6 +123,33 @@ if produto1.get_preco() is not None:
 
     print(produto1.get_preco())
 
+#Exercicio 07
+class Livro ():
+    def __init__ (self, livro, autor):
+        self.__livro = livro
+        self.__autor = autor
+    
+    def get_livro(self):
+        return self.__livro
+    def set_livro(self, livro):
+        if isinstance (livro, str) and len (livro) > 0:
+            self.__livro = livro
+        else: 
+            print("livro invalido")
+    def get_autor(self):
+            return self.__autor
+    def set_autor(self, autor):
+        if isinstance (autor, str) and len (autor) > 0:
+            self.__autor = autor
+        else: 
+            print("autor invalido")
+
+caderno1 = Livro ("cresp", "livro2")
+caderno1.set_livro("Aurelio")
+
+print( caderno1.get_autor(), caderno1.get_livro())
+
+
 
 
     
