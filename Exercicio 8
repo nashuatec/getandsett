@@ -1,0 +1,21 @@
+#Execicio 08
+#Criar Classe Funcionario, com o atributo salario, garantindo via set que ele sempre seja positivo
+class Funcionario ():
+    def __init__ (self, salario):
+        self.__salario = salario
+
+    def get_salario(self):
+        return self.__salario
+    
+    def set_salario(self,salario):
+        if salario >0:
+          self.__salario = salario
+        else:
+            print("o salario não pode ser negativo e portanto não houve alteracao aqui ele continua os mesmos:")
+            
+
+
+vendedor1 = Funcionario (1700)
+vendedor1.set_salario(1800)
+print(vendedor1.get_salario())
+
