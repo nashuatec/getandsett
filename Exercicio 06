@@ -1,0 +1,25 @@
+#Exercicios 06
+
+class Produto:
+    def __init__(self, preco):
+        self.__preco= None
+        if preco >0:
+            self.set_preco  (preco)
+        else:
+            print("o valor deve ser positivo")
+
+    def get_preco(self):
+        return self.__preco
+    
+    def set_preco(self, preco):
+        if preco >0:
+            self.__preco = preco
+        else:
+            print('o valor deve ser positivo2')
+      
+
+preco = float(input("digite o valor do produto"))
+produto1 = Produto (preco)
+if produto1.get_preco() is not None:
+
+    print(produto1.get_preco())
