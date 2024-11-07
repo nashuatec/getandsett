@@ -1,0 +1,6 @@
+# # Exercício 02
+#     def set_nome(self, nome):
+#         if isinstance (nome , str) and len (nome) > 0:
+#             self.__nome = nome
+#         else: 
+#             print("não tem nome aqui não")
