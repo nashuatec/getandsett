@@ -1,0 +1,25 @@
+#classe professor com nome e disciplina
+class Professor ():
+    def __init__(self, nome, disciplina):
+        self.__nome = nome
+        self.__disciplina= disciplina
+    
+    def get_nome (self):
+        return self.__nome
+    def set_nome (self, nome):
+        self.__nome = nome
+    
+    def get_disciplina (self):
+        return self.__disciplina
+    def set_disciplina (self, disciplina):
+        self.__disciplina = disciplina
+
+aluno1 =Professor('Agenor', 'Python Basico!')
+print(f' o aluno {aluno1.get_nome()}, esta estudando {aluno1.get_disciplina()}')
+
+print()
+input('Bora contar a verdade pressione enter!')
+
+aluno1.set_disciplina(input("Digite o nome da disciplina que o aluno esta realmente aprendendo algo e nao so enchendo linguica:"))
+
+print(f'O aluno {aluno1.get_nome()}, esta aprendendo {aluno1.get_disciplina()}, com o Professor Igor Matheus, porque o professor da outra disciplina nem vem dar aulas')
