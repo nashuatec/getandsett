@@ -1,0 +1,24 @@
+#classe cidade com nome e populacao get and set modifiers
+class Cidade():
+    def __init__(self,nome, populacao):
+        self.__nome = nome
+        self.__populacao = populacao
+    def get_nome (self):
+        return self.__nome
+    def set_nome(self, nome):
+        self.__nome = nome
+    def get_populacao (self):
+        return self.__populacao
+    def set_populacao (self, populacao):
+        self.__populacao = populacao
+
+censo1 = Cidade('Aparecida de Goiania','527.000')
+print(f'A cidade de {censo1.get_nome()}, possui a populacao de {censo1.get_populacao()}, segundo IBGE 2022')
+print()
+input('vamos atualizar o numero de habitantes para 527.796, digite enter para continuar...')
+censo1.set_populacao(float(input('digite a quantidade de habitantes atualizado:')))
+print()
+
+print(f'A cidade de {censo1.get_nome()}, possui a populacao de {censo1.get_populacao():.3f}, segundo IBGE 2024')
+
+#ver com o igor a possibilidade de usar is.integer para criar duas saidas uma inteira sem casas decimais para não imprimir5.0 e outra float.
