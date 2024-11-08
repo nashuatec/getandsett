@@ -1,54 +1,26 @@
 #criar computador com atributo memoria_ram que so aceita valores maiores que 0
-class Computador():
-    def __init__(self,memoria_ram):
-        self.__memoria_ram =memoria_ram
 
-    def get_memoria_ram (self):
-        return self.__memoria_ram
-    
-
-    def set_memoria_ram(self, memoria_ram):
-        if (memoria_ram >0):
-          self.__memoria_ram =memoria_ram
-
+class Computador():  
+    def __init__(self, memoria_ram):  
+        self.__memoria_ram = None  
+        if memoria_ram is not None and memoria_ram >0:
+            self.set_memoria_ram (memoria_ram)
         else:
-            print('Valor invalido o valor desse ser maior que 0')
-    
-memoria_ram = (int(input("digite o valor da memoria ram:")))
-computador1 = Computador(memoria_ram)
+            print('Valor invalido')
+       
 
-###Mostrar essa parte para o Igor
+    def get_memoria_ram(self):  
+        return self.__memoria_ram  
 
-if computador1.get_memoria_ram() is not None and computador1.get_memoria_ram() >0:
-    print(f'O valor da memoria e {computador1.get_memoria_ram()}GB')
-else:
-    print("Valor inválido \n A memoria não foi configurada corretamente")
-
-
+    def set_memoria_ram(self, memoria_ram):  
+        if memoria_ram > 0:  
+            self.__memoria_ram = memoria_ram  
+        else:  
+            print('Valor inválido: a memória RAM deve ser maior que 0.')  
 
 
+memoria_ram = int(input("Digite o valor da memória RAM: "))  
+computador1 = Computador(memoria_ram) 
+if computador1.get_memoria_ram() is not None:
 
-#     #######################################
-
-#Outra Versão  criando uma variavel dentro do contrutor com o valor inicial da memoria
-
-#     class Computador():  
-#     def __init__(self, memoria_ram):  
-#         self.__memoria_ram = None  
-#         self.set_memoria_ram(memoria_ram)  
-
-#     def get_memoria_ram(self):  
-#         return self.__memoria_ram  
-
-#     def set_memoria_ram(self, memoria_ram):  
-#         if memoria_ram > 0:  
-#             self.__memoria_ram = memoria_ram  
-#         else:  
-#             print('Valor inválido: a memória RAM deve ser maior que 0.')  
-
-
-# memoria_ram = int(input("Digite o valor da memória RAM: "))  
-# computador1 = Computador(memoria_ram)  # Cria o computador  
-
-
-# print(f'O valor da memória RAM é {computador1.get_memoria_ram()} GB.')  
+    print(f'O valor da memória RAM é {computador1.get_memoria_ram()} GB.')  
