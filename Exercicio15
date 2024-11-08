@@ -1,0 +1,23 @@
+#classe curso, com nome e duracao com metodos get and set
+class Curso():
+    def __init__(self, nome, duracao):
+        self.__nome = nome
+        self.__duracao = duracao
+    
+    def get_nome (self):
+        return self.__nome
+    
+    def set_nome(self, nome):
+        self.__nome = nome
+
+    def get_duracao (self):
+        return self.__duracao
+    
+    def set_duracao (self, duracao):
+        self.__duracao = duracao
+
+curso1 =Curso('felipe', 3)
+print(f'O aluno atual eh {curso1.get_nome()}, e a duracao atual eh {curso1.get_duracao()}')
+curso1.set_nome(input('Vamos mudar isso: \ndigite o nome do aluno: '))
+curso1.set_duracao(input('digite a duracao do curso: '))
+print(f'O novo nome eh {curso1.get_nome()},e a nova duracao eh { curso1.get_duracao()}')
