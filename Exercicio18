@@ -1,0 +1,22 @@
+#classe filme, titulo e ano lancamento com get and set
+class Filme():
+    def __init__(self, titulo, ano_lancamento):
+        self.__titulo = titulo
+        self.__ano_lancamento= ano_lancamento
+    
+    def get_titulo (self):
+        return self.__titulo
+    
+    def set_titulo (self, titulo):
+        self.__titulo = titulo
+
+    def get_ano_lancamento(self):
+        return self.__ano_lancamento
+    
+    def set_ano_lancamento(self, ano_lancamento):
+        self.__ano_lancamento = ano_lancamento
+
+    
+filme1 = Filme('Matrix', 1999)
+filme1.set_titulo(input('digite o titulo'))
+print(filme1.get_titulo(), filme1.get_ano_lancamento())
