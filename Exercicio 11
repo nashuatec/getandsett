@@ -1,0 +1,17 @@
+#Criar uma classe animal com atributo idade que seja inteiro positivo
+class Animal ():
+    def __init__(self, idade):
+        self.__idade = idade
+    def get_idade(self):
+        return self.__idade
+    
+    def set_idade(self, idade):
+        if (isinstance (idade, int)) and idade >0:
+            self.__idade = idade
+            print(f"a idade do animal foi atualizada para {self.__idade()}")
+        else:
+            print("Tá errado, das duas uma: ou não é numero inteiro ou entao e negativo.")
+
+animal1 = Animal ("")
+animal1.set_idade(-1)
+print(animal1.get_idade())
