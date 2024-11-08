@@ -16,7 +16,8 @@ class Filme():
     def set_ano_lancamento(self, ano_lancamento):
         self.__ano_lancamento = ano_lancamento
 
-    
+
+#teste de atributos
 filme1 = Filme('Matrix', 1999)
 filme1.set_titulo(input('digite o titulo'))
 print(filme1.get_titulo(), filme1.get_ano_lancamento())
