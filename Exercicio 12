@@ -1,0 +1,26 @@
+#Classe estudante com atributos nome e matricula com getter and setter
+class Estudante():
+    def __init__(self, nome, matricula):
+        self.__nome = nome
+        self.__matricula = matricula
+
+    def get_matricula(self):
+        return self.__matricula
+    
+    def set_nome(self, nome):
+        self.__nome = nome
+        
+    def get_nome (self):
+        return self.__nome
+    
+    def set_matricula (self, matricula):
+        self.__matricula = matricula
+
+estudante1 = Estudante("","")
+
+estudante1.set_nome("felipe")
+estudante1.set_matricula("matematica")
+print(estudante1.get_nome(), estudante1.get_matricula())
+        
+
+    
